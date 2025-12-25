@@ -5,6 +5,7 @@ const (
 	CtrlB         uint8 = 0x2
 	CtrlC         uint8 = 0x3
 	CtrlD         uint8 = 0x4
+	Tab           uint8 = 0x9
 	Enter         uint8 = 0xd
 	Escape        uint8 = 0x1b
 	OpenSqBracket uint8 = 0x5b

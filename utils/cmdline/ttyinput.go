@@ -26,6 +26,13 @@ func (tty *Tty) handleInput() (bool, error) {
 		//			   https://stackoverflow.com/questions/1516122/how-to-capture-controld-signal
 		tty.NilSuggestions()
 		tty.HushNextSuggestion()
+	case key.Tab:
+		exit = false
+		if tty.Inp.Index() == tty.Inp.Len() &&
+			tty.sugg != nil && tty.sugg.Size() > 0 {
+			top, _ := tty.sugg.Top()
+			input.SetBfrToStr(top.GetString())
+		}
 	case key.Enter:
 		input.Str()
 		tty.NilSuggestions()
