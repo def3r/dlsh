@@ -209,6 +209,9 @@ func parseToken(instruction *Instruction, tokens []string) int {
 			for _, c := range token {
 				if escapeChar {
 					escapeChar = false
+					if c != '"' && c != '\'' && c != '\\' {
+						modToken = append(modToken, '\\')
+					}
 					modToken = append(modToken, c)
 					continue
 				}

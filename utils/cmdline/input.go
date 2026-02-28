@@ -5,7 +5,7 @@ import (
 	"os"
 	"slices"
 
-	ansi "dlsh/utils/ansi"
+	// ansi "dlsh/utils/ansi"
 	key "dlsh/utils/keys"
 )
 
@@ -77,13 +77,13 @@ func (inp *Input) ClearReadBytes() {
 }
 
 func (inp *Input) DisplayReadBytes() {
-	fmt.Print("\r\n")
-	fmt.Print(ansi.ClLine)
+	// fmt.Print("\r\n")
+	// fmt.Print(ansi.ClLine)
 	var i int
 	for i = 0; i < len(inp.b) && inp.b[i] != 0; i++ {
 		fmt.Printf("%d ", inp.b[i])
 	}
-	fmt.Print("\r\n")
+	// fmt.Print("\r\n")
 }
 
 // Ref
