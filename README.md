@@ -1,18 +1,23 @@
 # *`dlsh`*
 
-dl shell - not everything is an abbreviation
+<div align="center">
+<img width="809" height="434" alt="Screenshot_20260228_124455" src="https://github.com/user-attachments/assets/556779ff-c7d1-4edd-9b3f-07ff0b0c3737" />
+</div>
+
+## Features:
+- Command history navigations
+- Fast and efficient autocomplete
+- Shell substitutions for `~`
+- Custom readline in raw terminal mode
+- Basic shell features: pipes, io redirection and more
+- Handles signals and `sigwinch`
 
 ## Todo
-
-- [ ] Local dir bin executions
-- [ ] Input features: support more editing opts
+- [x] Local dir bin executions
+- [ ] Input features: recogonise more key patterns
 - [ ] Inline highlighting (quick sol: regex; hard way: parsing)
-- [ ] Improve input layout
-- [ ] Clipboard support
-- [ ] Make it look good, its trash rn
+- [x] Improve input layout
 - [ ] Config file
-- [ ] Refactor cmdline
-- [ ] a scriptin lang
 
 ---
 
